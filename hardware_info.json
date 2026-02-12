@@ -9,7 +9,7 @@
   "name": "hardware_info",
   "previewIconUrl": "https://asset-resources.gdevelop.io/public-resources/Icons/Glyphster Pack/Master/SVG/Computers and Hardware/753fa13e6ee044ee0d52c7018718b65ffcacc28290dcc7008ec279bbf637a185_Computers and Hardware_chip_component.svg",
   "shortDescription": "A PC-only extension that display a device's hardware info and statistic by using expression.",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": [
     "Display device's hardware info",
     "",
