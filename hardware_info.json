@@ -1,0 +1,537 @@
+{
+  "author": "",
+  "category": "General",
+  "extensionNamespace": "",
+  "fullName": "Hardware info",
+  "gdevelopVersion": "",
+  "helpPath": "",
+  "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjMsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iSWNvbnMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzIgMzIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMyIDMyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDpub25lO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9DQo8L3N0eWxlPg0KPHBhdGggZD0iTTI5LDE1YzAuNiwwLDEtMC40LDEtMXMtMC40LTEtMS0xaC0zdi0yaDNjMC42LDAsMS0wLjQsMS0xcy0wLjQtMS0xLTFoLTNjMC0xLjctMS4zLTMtMy0zVjNjMC0wLjYtMC40LTEtMS0xcy0xLDAuNC0xLDF2Mw0KCWgtMlYzYzAtMC42LTAuNC0xLTEtMXMtMSwwLjQtMSwxdjNoLTJWM2MwLTAuNi0wLjQtMS0xLTFzLTEsMC40LTEsMXYzaC0yVjNjMC0wLjYtMC40LTEtMS0xUzksMi40LDksM3YzQzcuMyw2LDYsNy4zLDYsOUgzDQoJYy0wLjYsMC0xLDAuNC0xLDFzMC40LDEsMSwxaDN2MkgzYy0wLjYsMC0xLDAuNC0xLDFzMC40LDEsMSwxaDN2MkgzYy0wLjYsMC0xLDAuNC0xLDFzMC40LDEsMSwxaDN2MkgzYy0wLjYsMC0xLDAuNC0xLDFzMC40LDEsMSwxDQoJaDNjMCwxLjcsMS4zLDMsMywzdjNjMCwwLjYsMC40LDEsMSwxczEtMC40LDEtMXYtM2gydjNjMCwwLjYsMC40LDEsMSwxczEtMC40LDEtMXYtM2gydjNjMCwwLjYsMC40LDEsMSwxczEtMC40LDEtMXYtM2gydjMNCgljMCwwLjYsMC40LDEsMSwxczEtMC40LDEtMXYtM2MxLjcsMCwzLTEuMywzLTNoM2MwLjYsMCwxLTAuNCwxLTFzLTAuNC0xLTEtMWgtM3YtMmgzYzAuNiwwLDEtMC40LDEtMXMtMC40LTEtMS0xaC0zdi0ySDI5eiBNMjIsMTkNCgljMCwxLjctMS4zLDMtMywzaC02Yy0xLjcsMC0zLTEuMy0zLTN2LTZjMC0xLjcsMS4zLTMsMy0zaDZjMS43LDAsMywxLjMsMywzVjE5eiIvPg0KPC9zdmc+DQo=",
+  "name": "hardware_info",
+  "previewIconUrl": "https://asset-resources.gdevelop.io/public-resources/Icons/Glyphster Pack/Master/SVG/Computers and Hardware/753fa13e6ee044ee0d52c7018718b65ffcacc28290dcc7008ec279bbf637a185_Computers and Hardware_chip_component.svg",
+  "shortDescription": "A PC-only extension that display a device's hardware info and statistic by using expression.",
+  "version": "0.0.0",
+  "description": [
+    "Display device's hardware info",
+    "",
+    "You can display info of CPU, Memory and Software",
+    "",
+    "Expression:",
+    "",
+    "=== CPU ===",
+    "- CPU Archtecture",
+    "- Numbers of CPU core(s)",
+    "- CPU Model",
+    "- CPU Speed",
+    "",
+    "=== Memory ===",
+    "- Memory's Free space",
+    "- Memory's Total space",
+    "",
+    "=== Software ===",
+    "- Software version",
+    "- Software release",
+    "",
+    "----- CAUTIOUS -----",
+    "This extension only supported on desktop, laptop, computer or personal computer, not suitable for mobile and browser game."
+  ],
+  "tags": [],
+  "authorIds": [
+    "yiqnYX1ebwXbxgdQLdeN4sUvn662"
+  ],
+  "dependencies": [],
+  "globalVariables": [],
+  "sceneVariables": [
+    {
+      "name": "CPU_arch",
+      "type": "string",
+      "value": "null"
+    },
+    {
+      "name": "CPU_LC",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "index",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "CPU_CoreModel",
+      "type": "string",
+      "value": "null"
+    },
+    {
+      "name": "CPU_CoreSpeed",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "RAM_FreeMem",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "RAM_TotalMem",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "Version",
+      "type": "string",
+      "value": "null"
+    },
+    {
+      "name": "Release",
+      "type": "string",
+      "value": "null"
+    },
+    {
+      "name": "Platform",
+      "type": "string",
+      "value": "null"
+    }
+  ],
+  "eventsFunctions": [
+    {
+      "description": "Return the string of CPU architecture",
+      "fullName": "CPU Architecture",
+      "functionType": "StringExpression",
+      "group": "CPU",
+      "name": "CPU_Architecture",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "try { const os = require(\"os\");",
+            "",
+            "runtimeScene.getVariablesForExtension(\"hardware_info\").get(\"CPU_arch\").setString(os.arch())",
+            "",
+            "}",
+            "",
+            "catch (Error) {",
+            "    console.error(\"Sorry, This extension is not supported for mobile, browser\");",
+            "}"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnString"
+              },
+              "parameters": [
+                "CPU_arch"
+              ]
+            }
+          ]
+        }
+      ],
+      "expressionType": {
+        "type": "string"
+      },
+      "parameters": [],
+      "objectGroups": []
+    },
+    {
+      "description": "Return the number of CPU core",
+      "fullName": "CPU Logical core",
+      "functionType": "Expression",
+      "group": "CPU",
+      "name": "CPU_Logical_core",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "try { ",
+            "    ",
+            "    const os = require(\"os\");",
+            "",
+            "runtimeScene.getVariablesForExtension(\"hardware_info\").get(\"CPU_LC\").setString(os.cpus().length)",
+            "",
+            "}",
+            "",
+            "catch (Error) {",
+            "    console.error(\"Sorry, This extension is not supported for mobile, browser\");",
+            "}"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnNumber"
+              },
+              "parameters": [
+                "CPU_LC"
+              ]
+            }
+          ]
+        }
+      ],
+      "expressionType": {
+        "type": "expression"
+      },
+      "parameters": [],
+      "objectGroups": []
+    },
+    {
+      "description": "Return the string of CPU core's model",
+      "fullName": "CPU Core Model",
+      "functionType": "StringExpression",
+      "group": "CPU",
+      "name": "CPU_CoreModel",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "try { ",
+            "    const os = require(\"os\");",
+            "    const index = eventsFunctionContext.getArgument(\"Index\");",
+            "",
+            "    runtimeScene.getVariablesForExtension(\"hardware_info\").get(\"CPU_CoreModel\").setString(os.cpus()[index].model)",
+            "",
+            "}",
+            "",
+            "catch (Error) {",
+            "    console.error(\"Sorry, This extension is not supported for mobile, browser or the function CPU_CoreModel got crashed\");",
+            "}"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnString"
+              },
+              "parameters": [
+                "CPU_CoreModel"
+              ]
+            }
+          ]
+        }
+      ],
+      "expressionType": {
+        "type": "string"
+      },
+      "parameters": [
+        {
+          "description": "Core number",
+          "name": "Index",
+          "supplementaryInformation": "ParticleSystem::ParticleEmitter",
+          "type": "expression"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "description": "Return the number of CPU's tick in MHz",
+      "fullName": "CPU Core Speed",
+      "functionType": "Expression",
+      "group": "CPU",
+      "name": "CPU_CoreSpeed",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "try {",
+            "    const os = require(\"os\");",
+            "    const index = eventsFunctionContext.getArgument(\"Index\");",
+            "",
+            "    runtimeScene.getVariablesForExtension(\"hardware_info\").get(\"CPU_CoreSpeed\").setString(os.cpus()[index].speed)",
+            "",
+            "}",
+            "",
+            "catch (Error) {",
+            "    console.error(\"Sorry, This extension is not supported for mobile, browser or function CPU_CoreSpeed got crashed.\");",
+            "}"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnString"
+              },
+              "parameters": [
+                "CPU_CoreSpeed"
+              ]
+            }
+          ]
+        }
+      ],
+      "expressionType": {
+        "type": "expression"
+      },
+      "parameters": [
+        {
+          "description": "Core number",
+          "name": "Index",
+          "supplementaryInformation": "ParticleSystem::ParticleEmitter",
+          "type": "expression"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "description": "Return the number of memory's free space in bytes",
+      "fullName": "Free Memory",
+      "functionType": "Expression",
+      "group": "Memory",
+      "name": "RAM_FreeMem",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "try { ",
+            "    const os = require(\"os\");",
+            "",
+            "    runtimeScene.getVariablesForExtension(\"hardware_info\").get(\"RAM_FreeMem\").setString(os.freemem())",
+            "",
+            "}",
+            "",
+            "catch (Error) {",
+            "    console.error(\"Sorry, This extension is not supported for mobile, browser\");",
+            "}"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnNumber"
+              },
+              "parameters": [
+                "RAM_FreeMem"
+              ]
+            }
+          ]
+        }
+      ],
+      "expressionType": {
+        "type": "expression"
+      },
+      "parameters": [],
+      "objectGroups": []
+    },
+    {
+      "description": "Return the number of memory's total space in bytes",
+      "fullName": "Total Memory",
+      "functionType": "Expression",
+      "group": "Memory",
+      "name": "RAM_TotalMem",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "try {",
+            "    const os = require(\"os\");",
+            "",
+            "    runtimeScene.getVariablesForExtension(\"hardware_info\").get(\"RAM_TotalMem\").setString(os.totalmem())",
+            "}",
+            "",
+            "catch (Error) {",
+            "    console.error(\"Sorry, This extension is not supported for mobile, browser\");",
+            "}"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnNumber"
+              },
+              "parameters": [
+                "RAM_TotalMem"
+              ]
+            }
+          ]
+        }
+      ],
+      "expressionType": {
+        "type": "expression"
+      },
+      "parameters": [],
+      "objectGroups": []
+    },
+    {
+      "description": "Return the string of software's version",
+      "fullName": "Version",
+      "functionType": "StringExpression",
+      "group": "Software",
+      "name": "Software_Version",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "try { ",
+            "    const os = require(\"os\");",
+            "",
+            "    runtimeScene.getVariablesForExtension(\"hardware_info\").get(\"Version\").setString(os.version())",
+            "",
+            "}",
+            "",
+            "catch (Error) {",
+            "    console.error(\"Sorry, This extension is not supported for mobile, browser\");",
+            "}"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnString"
+              },
+              "parameters": [
+                "Version"
+              ]
+            }
+          ]
+        }
+      ],
+      "expressionType": {
+        "type": "string"
+      },
+      "parameters": [],
+      "objectGroups": []
+    },
+    {
+      "description": "Return the string of software's release",
+      "fullName": "Release",
+      "functionType": "StringExpression",
+      "group": "Software",
+      "name": "Software_Release",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "try { ",
+            "    const os = require(\"os\");",
+            "",
+            "    runtimeScene.getVariablesForExtension(\"hardware_info\").get(\"Release\").setString(os.release())",
+            "",
+            "}",
+            "",
+            "catch (Error) {",
+            "    console.error(\"Sorry, This extension is not supported for mobile, browser\");",
+            "}"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnString"
+              },
+              "parameters": [
+                "Release"
+              ]
+            }
+          ]
+        }
+      ],
+      "expressionType": {
+        "type": "string"
+      },
+      "parameters": [],
+      "objectGroups": []
+    },
+    {
+      "description": "Return the string of software's platform",
+      "fullName": "Platform",
+      "functionType": "StringExpression",
+      "group": "Software",
+      "name": "Software_Platform",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "try {",
+            "    const os = require(\"os\");",
+            "",
+            "    runtimeScene.getVariablesForExtension(\"hardware_info\").get(\"Platform\").setString(os.release())",
+            "",
+            "}",
+            "",
+            "catch (Error) {",
+            "    console.error(\"Sorry, This extension is not supported for mobile, browser\");",
+            "}"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnString"
+              },
+              "parameters": [
+                "Platform"
+              ]
+            }
+          ]
+        }
+      ],
+      "expressionType": {
+        "type": "string"
+      },
+      "parameters": [],
+      "objectGroups": []
+    }
+  ],
+  "eventsBasedBehaviors": [],
+  "eventsBasedObjects": []
+}
